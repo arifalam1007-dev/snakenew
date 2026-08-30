@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import ContactSection from "./ContactSection";
 
 /* ============================================================
    SNAKE — a single-file canvas arcade game.
@@ -815,6 +816,8 @@ export default function App() {
           <span className="tick-note">FIXED TICK · 100 MS</span>
         </footer>
       </main>
+
+      <ContactSection />
 
       <div className="pad" onContextMenu={(e) => e.preventDefault()}>
         <button className="pbtn up" aria-label="Up" onPointerDown={(e) => { e.preventDefault(); api.turn({ x: 0, y: -1 }); }}>
